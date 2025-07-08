@@ -32,7 +32,25 @@ To target a specific Unreal Engine game, you'll need to **update two lines in th
 - **`Injection.cpp`** → **Line 5**  
   Also update this line with the game name to ensure proper process targeting.
 
-> These lines are used to identify the game window or process during injection and setup.
+These lines are used to identify the game window or process during injection and setup.
+
+---
+
+### 3. Dump the SDK (Required)
+
+Unreal Engine games require a dumped SDK to properly interface with engine functions and game objects.
+
+Use a tool like **Unreal Dumper 7** to extract the SDK:
+
+🔗 [https://github.com/Encryqed/Dumper-7](https://github.com/Encryqed/Dumper-7)
+
+Once dumped:
+
+- Add the generated SDK.
+- Include the SDK headers in your project so you can access UE4 classes, structs, and offsets.
+- You may also need to adjust the include paths via **Project Properties → C/C++ → Additional Include Directories**.
+
+- An SDK has been added as an example!
 
 ---
 
@@ -50,7 +68,7 @@ Whether you're a game developer or a security enthusiast, this code serves as a 
 
 ## 🤝 Credits
 
-Special thanks to **Wraith**, who contributed significantly to the development of this base and its architecture.
+Special thanks to **[Wraith](https://github.com/Wraith1504)**, who contributed significantly to the development of this base and its architecture.
 
 ---
 
