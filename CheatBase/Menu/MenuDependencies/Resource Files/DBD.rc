@@ -1,0 +1,3 @@
+#include "resource.h"
+
+IDR_WAVE1 WAVE "notif.wav"

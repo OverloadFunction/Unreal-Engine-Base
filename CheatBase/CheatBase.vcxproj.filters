@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Headers\Include.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\GeneralFunctions\Functions.h">
+      <Filter>Main\General Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Hooks\Hooks.h">
+      <Filter>Main\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Hooks\D3DHook\Dependencies\SafeSwap\SafeSwap.h">
+      <Filter>Main\Hooks\D3DHook\Dependencies\SafeSwap</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Hooks\ProcessRPCHook\ProcessRPCHook.h">
+      <Filter>Main\Hooks\ProcessRPCHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Hooks\ProcessEventHook\ProcessEventHook.h">
+      <Filter>Main\Hooks\ProcessEventHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Hooks\PostRenderHook\PostRenderHook.h">
+      <Filter>Main\Hooks\PostRenderHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Rendering\Renderer.h">
+      <Filter>Main\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Rendering\Menu\DebugWindow\DebugWindow.h">
+      <Filter>Main\Rendering\Menu\DebugWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Config.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Components\Components.h">
+      <Filter>Menu\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Components\Components\Binding.h">
+      <Filter>Menu\Components\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Main\Menu.h">
+      <Filter>Menu\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imconfig.h">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imgui.h">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imgui_impl_dx11.h">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imgui_impl_win32.h">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imgui_internal.h">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuDependencies\ImGui\ImGuiNotify.hpp">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imstb_rectpack.h">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imstb_textedit.h">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imstb_truetype.h">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuDependencies\Resource Files\resource.h">
+      <Filter>Menu\MenuDependencies\Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Styling\MenuStyle.h">
+      <Filter>Menu\Styling</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Tabs\Tabs.h">
+      <Filter>Menu\Tabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Tabs\TabFuncs\TabFuncs.h">
+      <Filter>Menu\Tabs\TabFuncs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main\Injection.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\GeneralFunctions\IsGameFocused.cpp">
+      <Filter>Main\General Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\HookedFuncs\PostRender.cpp">
+      <Filter>Main\Hooked Funcs</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\HookedFuncs\ProcessEvent.cpp">
+      <Filter>Main\Hooked Funcs</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\HookedFuncs\ProcessRemoteFunctions.cpp">
+      <Filter>Main\Hooked Funcs</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Hooks\D3DHook\D3DHook.cpp">
+      <Filter>Main\Hooks\D3DHook</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Hooks\D3DHook\Dependencies\SafeSwap\SafeSwap.cpp">
+      <Filter>Main\Hooks\D3DHook\Dependencies\SafeSwap</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Hooks\ProcessRPCHook\ProcessRPCHook.cpp">
+      <Filter>Main\Hooks\ProcessRPCHook</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Hooks\ProcessEventHook\ProcessEventHook.cpp">
+      <Filter>Main\Hooks\ProcessEventHook</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Hooks\PostRenderHook\PostRenderHook.cpp">
+      <Filter>Main\Hooks\PostRenderHook</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Rendering\Renderer.cpp">
+      <Filter>Main\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Rendering\Menu\DebugWindow\DebugWindow.cpp">
+      <Filter>Main\Rendering\Menu\DebugWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Components\Components\Checkbox.cpp">
+      <Filter>Menu\Components\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Components\Components\InputTextMultiline.cpp">
+      <Filter>Menu\Components\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Components\Components\KeybindButton.cpp">
+      <Filter>Menu\Components\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Components\Components\SidebarButton.cpp">
+      <Filter>Menu\Components\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Components\Components\SliderFloat.cpp">
+      <Filter>Menu\Components\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Components\Components\SliderInt.cpp">
+      <Filter>Menu\Components\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Main\Menu.cpp">
+      <Filter>Menu\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\MenuDependencies\ImGui\imgui.cpp">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\MenuDependencies\ImGui\imgui_demo.cpp">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\MenuDependencies\ImGui\imgui_draw.cpp">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\MenuDependencies\ImGui\imgui_impl_dx11.cpp">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\MenuDependencies\ImGui\imgui_impl_win32.cpp">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\MenuDependencies\ImGui\imgui_tables.cpp">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\MenuDependencies\ImGui\imgui_widgets.cpp">
+      <Filter>Menu\MenuDependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Styling\MenuStyle.cpp">
+      <Filter>Menu\Styling</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Tabs\Debug\Debug.cpp">
+      <Filter>Menu\Tabs\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Tabs\Info\Info.cpp">
+      <Filter>Menu\Tabs\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Tabs\TabFuncs\Lerp.cpp">
+      <Filter>Menu\Tabs\TabFuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Tabs\TabFuncs\RGBAToVec4.cpp">
+      <Filter>Menu\Tabs\TabFuncs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{10bd5a90-8f7a-4e09-9260-1586ae2c36d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{14e391b4-1f23-445b-af78-32c1ab6e2a0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\General Functions">
+      <UniqueIdentifier>{add3b0fc-3d1e-4801-9f50-52371d850e0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Hooked Funcs">
+      <UniqueIdentifier>{c36f121c-7e76-49a3-82d4-be6ced39776d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Hooks">
+      <UniqueIdentifier>{4df58e07-cd31-424d-b600-a9bc08bdf67e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Rendering">
+      <UniqueIdentifier>{b5befb29-514a-4f5b-acdd-a44937166c5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Hooks\PostRenderHook">
+      <UniqueIdentifier>{706515c3-5050-4231-9e76-80e5198f9a82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Hooks\ProcessEventHook">
+      <UniqueIdentifier>{8eb9a202-b17f-44ec-ac50-3759e14a0a6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Hooks\ProcessRPCHook">
+      <UniqueIdentifier>{af518694-71a1-402f-ac4c-1111f7b8efcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Hooks\D3DHook">
+      <UniqueIdentifier>{1f576dbf-f9e3-4e4b-838d-556c82f0f385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Hooks\D3DHook\Dependencies">
+      <UniqueIdentifier>{e36aecf6-bb4a-46ce-8fa3-555e7ed337b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Hooks\D3DHook\Dependencies\SafeSwap">
+      <UniqueIdentifier>{00735931-aaf4-4b50-94c8-62027a043944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Rendering\Menu">
+      <UniqueIdentifier>{a95396a5-e41d-47a3-82ea-fd73b15364c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Rendering\Menu\DebugWindow">
+      <UniqueIdentifier>{1f5e3409-b1f8-4433-a2c8-e20eaade12c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{ce69b80e-e05f-4ed2-8f8a-65f2e002743e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Components">
+      <UniqueIdentifier>{3044fa2a-94bc-4157-85f0-379960b1b9a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Main">
+      <UniqueIdentifier>{653a3687-8ddb-4c9a-a87c-d25673e23c51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\MenuDependencies">
+      <UniqueIdentifier>{d8c4e8b8-0350-45a7-9319-d5558180a134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Styling">
+      <UniqueIdentifier>{440d1fce-0168-40d9-9970-dd2e1065fdf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Tabs">
+      <UniqueIdentifier>{f94a5b04-c651-4ab3-9e98-8143f90f5364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Components\Components">
+      <UniqueIdentifier>{b55cd3c1-4469-4ad5-b0ad-ab7e5bb48af5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\MenuDependencies\ImGui">
+      <UniqueIdentifier>{6ef7d78d-f008-4bb0-a96b-80f07fdc77a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\MenuDependencies\Resource Files">
+      <UniqueIdentifier>{b395675d-8c51-4d45-8533-d41f1b9df095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Tabs\Debug">
+      <UniqueIdentifier>{9271422d-8fe5-4e12-8700-945840db0247}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Tabs\Info">
+      <UniqueIdentifier>{8830d93f-cf7d-4892-85c9-9d2aaf0531da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Tabs\TabFuncs">
+      <UniqueIdentifier>{4df8ef22-4907-4544-9943-78ac88e97690}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Menu\MenuDependencies\Resource Files\DBD.rc">
+      <Filter>Menu\MenuDependencies\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\Include.h" />
+    <ClInclude Include="Main\GeneralFunctions\Functions.h" />
+    <ClInclude Include="Main\Hooks\D3DHook\Dependencies\SafeSwap\SafeSwap.h" />
+    <ClInclude Include="Main\Hooks\Hooks.h" />
+    <ClInclude Include="Main\Hooks\PostRenderHook\PostRenderHook.h" />
+    <ClInclude Include="Main\Hooks\ProcessEventHook\ProcessEventHook.h" />
+    <ClInclude Include="Main\Hooks\ProcessRPCHook\ProcessRPCHook.h" />
+    <ClInclude Include="Main\Rendering\Menu\DebugWindow\DebugWindow.h" />
+    <ClInclude Include="Main\Rendering\Renderer.h" />
+    <ClInclude Include="Menu\Components\Components.h" />
+    <ClInclude Include="Menu\Components\Components\Binding.h" />
+    <ClInclude Include="Menu\Config.h" />
+    <ClInclude Include="Menu\Main\Menu.h" />
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imconfig.h" />
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imgui.h" />
+    <ClInclude Include="Menu\MenuDependencies\ImGui\ImGuiNotify.hpp" />
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imgui_internal.h" />
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Menu\MenuDependencies\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Menu\MenuDependencies\Resource Files\resource.h" />
+    <ClInclude Include="Menu\Styling\MenuStyle.h" />
+    <ClInclude Include="Menu\Tabs\TabFuncs\TabFuncs.h" />
+    <ClInclude Include="Menu\Tabs\Tabs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main\GeneralFunctions\IsGameFocused.cpp" />
+    <ClCompile Include="Main\HookedFuncs\PostRender.cpp" />
+    <ClCompile Include="Main\HookedFuncs\ProcessEvent.cpp" />
+    <ClCompile Include="Main\HookedFuncs\ProcessRemoteFunctions.cpp" />
+    <ClCompile Include="Main\Hooks\D3DHook\D3DHook.cpp" />
+    <ClCompile Include="Main\Hooks\D3DHook\Dependencies\SafeSwap\SafeSwap.cpp" />
+    <ClCompile Include="Main\Hooks\PostRenderHook\PostRenderHook.cpp" />
+    <ClCompile Include="Main\Hooks\ProcessEventHook\ProcessEventHook.cpp" />
+    <ClCompile Include="Main\Hooks\ProcessRPCHook\ProcessRPCHook.cpp" />
+    <ClCompile Include="Main\Injection.cpp" />
+    <ClCompile Include="Main\Rendering\Menu\DebugWindow\DebugWindow.cpp" />
+    <ClCompile Include="Main\Rendering\Renderer.cpp" />
+    <ClCompile Include="Menu\Components\Components\Checkbox.cpp" />
+    <ClCompile Include="Menu\Components\Components\InputTextMultiline.cpp" />
+    <ClCompile Include="Menu\Components\Components\KeybindButton.cpp" />
+    <ClCompile Include="Menu\Components\Components\SidebarButton.cpp" />
+    <ClCompile Include="Menu\Components\Components\SliderFloat.cpp" />
+    <ClCompile Include="Menu\Components\Components\SliderInt.cpp" />
+    <ClCompile Include="Menu\Main\Menu.cpp" />
+    <ClCompile Include="Menu\MenuDependencies\ImGui\imgui.cpp" />
+    <ClCompile Include="Menu\MenuDependencies\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="Menu\MenuDependencies\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Menu\MenuDependencies\ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Menu\MenuDependencies\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Menu\MenuDependencies\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="Menu\MenuDependencies\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Menu\Styling\MenuStyle.cpp" />
+    <ClCompile Include="Menu\Tabs\Debug\Debug.cpp" />
+    <ClCompile Include="Menu\Tabs\Info\Info.cpp" />
+    <ClCompile Include="Menu\Tabs\TabFuncs\Lerp.cpp" />
+    <ClCompile Include="Menu\Tabs\TabFuncs\RGBAToVec4.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Menu\MenuDependencies\Resource Files\DBD.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{19dbf709-ced6-4309-9507-c59faca1197d}</ProjectGuid>
+    <RootNamespace>CheatBase</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;CHEATBASE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;CHEATBASE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;CHEATBASE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;CHEATBASE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp23</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(ProjectDir)Main\Hooks\D3DHook\Dependencies\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>detours.h;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
