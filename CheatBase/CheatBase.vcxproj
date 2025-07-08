@@ -45,6 +45,10 @@
     <ClInclude Include="Menu\Styling\MenuStyle.h" />
     <ClInclude Include="Menu\Tabs\TabFuncs\TabFuncs.h" />
     <ClInclude Include="Menu\Tabs\Tabs.h" />
+    <ClInclude Include="SDK\PropertyFixup.hpp" />
+    <ClInclude Include="SDK\SDK.hpp" />
+    <ClInclude Include="SDK\UnrealContainers.hpp" />
+    <ClInclude Include="SDK\UtfN.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main\GeneralFunctions\IsGameFocused.cpp" />
@@ -78,9 +82,16 @@
     <ClCompile Include="Menu\Tabs\Info\Info.cpp" />
     <ClCompile Include="Menu\Tabs\TabFuncs\Lerp.cpp" />
     <ClCompile Include="Menu\Tabs\TabFuncs\RGBAToVec4.cpp" />
+    <ClCompile Include="SDK\SDK\Basic.cpp" />
+    <ClCompile Include="SDK\SDK\CoreUObject_functions.cpp" />
+    <ClCompile Include="SDK\SDK\DeadByDaylight_functions.cpp" />
+    <ClCompile Include="SDK\SDK\Engine_functions.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Menu\MenuDependencies\Resource Files\DBD.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SDK\NameCollisions.inl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

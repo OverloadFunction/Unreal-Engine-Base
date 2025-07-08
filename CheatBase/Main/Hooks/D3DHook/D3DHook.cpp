@@ -126,7 +126,7 @@ HRESULT __stdcall PresentHook(IDXGISwapChain* SwapChain, UINT SyncInterval, UINT
 }
 
 bool __stdcall CreateDeviceAndSwapChain() {
-	HWND hWnd = FindWindowA("UnrealWindow", "CheatName  ");
+	HWND hWnd = FindWindowA("UnrealWindow", "GameName "); // Example: DeadByDaylight
 	if (hWnd == nullptr)
 	{
 		printf("can't find window\n");

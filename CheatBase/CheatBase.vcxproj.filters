@@ -79,6 +79,18 @@
     <ClInclude Include="Menu\Tabs\TabFuncs\TabFuncs.h">
       <Filter>Menu\Tabs\TabFuncs</Filter>
     </ClInclude>
+    <ClInclude Include="SDK\UnrealContainers.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\PropertyFixup.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\UtfN.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main\Injection.cpp">
@@ -174,6 +186,18 @@
     <ClCompile Include="Menu\Tabs\TabFuncs\RGBAToVec4.cpp">
       <Filter>Menu\Tabs\TabFuncs</Filter>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\Basic.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\CoreUObject_functions.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\DeadByDaylight_functions.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\Engine_functions.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Headers">
@@ -254,10 +278,21 @@
     <Filter Include="Menu\Tabs\TabFuncs">
       <UniqueIdentifier>{4df8ef22-4907-4544-9943-78ac88e97690}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{c26d565d-3ce6-481a-8e3a-38e5df120f34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\SDK">
+      <UniqueIdentifier>{782e30c0-21fd-4740-97f7-c3ff47a161c7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Menu\MenuDependencies\Resource Files\DBD.rc">
       <Filter>Menu\MenuDependencies\Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SDK\NameCollisions.inl">
+      <Filter>SDK</Filter>
+    </None>
   </ItemGroup>
 </Project>
