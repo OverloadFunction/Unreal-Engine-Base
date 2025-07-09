@@ -26,10 +26,10 @@ namespace Hooks
         if (!oProcessEvent) {
             void** VTable = *(void***)BaseObject;
             DWORD oldProtect;
-            VirtualProtect(&VTable[77], 8, PAGE_EXECUTE_READWRITE, &oldProtect);
-            oProcessEvent = (tProcessEvent)VTable[77];
-            VTable[77] = (void*)ProcessEvent;
-            VirtualProtect(&VTable[77], 8, oldProtect, nullptr);
+            VirtualProtect(&VTable[Insert Vtable index here], 8, PAGE_EXECUTE_READWRITE, &oldProtect);
+            oProcessEvent = (tProcessEvent)VTable[Insert Vtable index here];
+            VTable[Insert Vtable index here] = (void*)ProcessEvent;
+            VirtualProtect(&VTable[Insert Vtable index here], 8, oldProtect, nullptr);
             printf("hooked processevent\n");
         }
     }
