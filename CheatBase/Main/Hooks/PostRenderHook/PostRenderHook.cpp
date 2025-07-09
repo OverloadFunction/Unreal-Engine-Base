@@ -25,10 +25,10 @@ namespace Hooks
 
         if (!oPostRender) {
             DWORD Restore;
-            VirtualProtect(&GameViewportVTable[112], 8, PAGE_EXECUTE_READWRITE, &Restore);
-            oPostRender = reinterpret_cast<decltype(oPostRender)>(GameViewportVTable[112]);
-            GameViewportVTable[112] = &PostRenderHooked;
-            VirtualProtect(&GameViewportVTable[112], 8, Restore, 0);
+            VirtualProtect(&GameViewportVTable[Insert Vtable index here], 8, PAGE_EXECUTE_READWRITE, &Restore);
+            oPostRender = reinterpret_cast<decltype(oPostRender)>(GameViewportVTable[Insert Vtable index here]);
+            GameViewportVTable[Insert Vtable index here] = &PostRenderHooked;
+            VirtualProtect(&GameViewportVTable[Insert Vtable index here], 8, Restore, 0);
             printf("hooked postrender\n");
         }
     }
