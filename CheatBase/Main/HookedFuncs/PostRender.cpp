@@ -32,36 +32,10 @@ void __fastcall PostRenderHooked(SDK::UGameViewportClient* UGameViewportClient, 
     if (!PlayerController) return oPostRender(UGameViewportClient, UCanvas);
 
     auto Me = (SDK::ADBDPlayer*)PlayerController->Pawn;
-    if (!Me || !Me->IsA(SDK::ADBDPlayer::StaticClass())) return oPostRender(UGameViewportClient, UCanvas);
+    if (!Me || !Me->IsA(Insert player class here)) return oPostRender(UGameViewportClient, UCanvas);
 
     auto Actors = ULevel->GetActors();
     if (!Actors || Actors.Num() == 0) return oPostRender(UGameViewportClient, UCanvas);
-
-    SDK::FVector Forward = PlayerController->PlayerCameraManager->GetActorForwardVector();
-    SDK::FVector Right = PlayerController->PlayerCameraManager->GetActorRightVector();
-    SDK::FVector Up = PlayerController->PlayerCameraManager->GetActorUpVector();
-
-    SDK::FVector Position = Me->K2_GetActorLocation();
-    SDK::FRotator Rotation = Me->K2_GetActorRotation();
-    SDK::FVector Movement = { 0,0,0 };
-
-    if (GetAsyncKeyState('W') & 0x8000 && IsGameFocused())  Movement += Forward;
-    if (GetAsyncKeyState('S') & 0x8000 && IsGameFocused())  Movement -= Forward;
-    if (GetAsyncKeyState('A') & 0x8000 && IsGameFocused())  Movement -= Right;
-    if (GetAsyncKeyState('D') & 0x8000 && IsGameFocused())  Movement += Right;
-    if (GetAsyncKeyState(VK_SPACE) & 0x8000 && IsGameFocused())  Movement += Up;
-    if (GetAsyncKeyState(VK_LCONTROL) & 0x8000 && IsGameFocused()) Movement -= Up;
-
-    if (!Movement.IsZero()) {
-        Movement = Movement.GetNormalized() * 2;
-    }
-
-    if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && IsGameFocused())
-    {
-        Movement = Movement * 3;
-    }
-
-    Me->TeleportWithClothHandling(Position + Movement, Rotation, false);
 
     return oPostRender(UGameViewportClient, UCanvas);
 }
