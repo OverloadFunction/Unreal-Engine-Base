@@ -24,7 +24,7 @@ Make sure you have Visual Studio installed with the appropriate Windows SDK and 
 
 ### 2. Configure Game Name
 
-To target a specific Unreal Engine game, you'll need to **update two lines in the code**:
+To target a specific Unreal Engine game, you'll need to **update a few lines in the code**:
 
 - **`D3DHook.cpp`** → **Line 129**  
   Modify this line to match the window title of your target game.
@@ -34,6 +34,8 @@ To target a specific Unreal Engine game, you'll need to **update two lines in th
 
 These lines are used to identify the game window or process during injection and setup.
 
+- **`Hooks`**
+  You will need to find the Vtable indexes for the functions we are hooking for your game.
 ---
 
 ### 3. Dump the SDK (Required)
