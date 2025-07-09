@@ -70,7 +70,7 @@ Whether you're a game developer or a security enthusiast, this code serves as a 
 
 ## 🤝 Credits
 
-Special thanks to **[Wraith](https://github.com/Wraith1504)**, who contributed significantly to the development of this base and its architecture.
+Special thanks to **[Gr4bify](https://github.com/Wraith1504)**, who contributed significantly to the development of this base and its architecture.
 
 ---
 
